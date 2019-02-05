@@ -1,1 +1,2 @@
-e97eb99a097fe98c76a3005ae08e0e575d837889
+http://api.gios.gov.pl/pjp-api/rest/data/getData/20176  pm2,5 Dąbrowskiego
+http://api.gios.gov.pl/pjp-api/rest/data/getData/6085  pm10 Dabrowskiego
