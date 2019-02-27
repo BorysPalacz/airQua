@@ -8,9 +8,13 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<section class="hero is-fullheight">
+<div class="cont">
 <div class="columns">
-  <div class="column is-5">
+  <div class="column is-7">
+    <img id="myImg" alt="LIPA">
+  </div>  
+  <div class="column is-size-4">
+  <div class="middle"></div> 
     <p>Dzisiaj na Dąbrowskiego o godzinie
     <p id="hour"></p>
     <p>stężenie pyłu PM2,5 wyniosło
@@ -19,11 +23,18 @@
     <p>. Jest to wartość odpowiadająca
     <p id="norm">
     <p>% dobowego stężenia wg organizacji WHO.
-    <p id="decision"></p>
-  </div>  
-  <div class="column"></div>  
-  <div class="column"></div> 
-</section>
+    <p id="decision"></p> 
+</div>
+</div>
+<a onclick="myFunction()" class="button is-outlined is-dark">Więcej informacji</a>
+</br></br>
+<div class="is-size-5">
+<p>
+Aplikacja pokazuje ostatnie dane dotyczące stężenia pyłu w Poznaniu na oficjalnej stacji GIOŚ. Dane zostają pobierane za pomocą API przez stronę <a href="https://openaq.org/">OpenAQ.</a>
+Grafiki zostały wykonane przez <a href="http://www.freepik.com">Designed by Macrovector / Freepik</a>
+</p>
+</div>
+</div>
 <script src="main.js"></script>
 </body>
 </html>

@@ -1,5 +1,27 @@
+@media screen and (max-width: 1000px) {
+    .middle {
+      display: none;
+    }
+  }
+body, html{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#myImg{
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+}
 p {
     display: inline;
     margin:0;
     padding:0;
+}
+.middle{
+    margin-top: 25vh;
+}
+.cont{
+    margin: 0 50px;
+    height: 100vh;
 }
