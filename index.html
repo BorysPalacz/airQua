@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<div style="display: block" id="hideAll"></div>
 <div class="cont">
 <div class="columns">
   <div class="column is-7">
@@ -26,15 +27,16 @@
     <p id="decision"></p> 
 </div>
 </div>
-<a onclick="myFunction()" class="button is-outlined is-dark">Więcej informacji</a>
+<a onclick="toogle('id');"class="button is-outlined is-dark">Więcej informacji</a>
 </br></br>
-<div class="is-size-5">
+<div class="is-size-5" id="id" style="display: none;">
 <p>
-Aplikacja pokazuje ostatnie dane dotyczące stężenia pyłu w Poznaniu na oficjalnej stacji GIOŚ. Dane zostają pobierane za pomocą API przez stronę <a href="https://openaq.org/">OpenAQ.</a>
+Aplikacja pokazuje ostatnie dane dotyczące stężenia pyłu w Poznaniu na oficjalnej stacji GIOŚ. Dane zostają pobierane za pomocą API przez <a href="https://openaq.org/">OpenAQ.</a>
 Grafiki zostały wykonane przez <a href="http://www.freepik.com">Designed by Macrovector / Freepik</a>
 </p>
 </div>
 </div>
 <script src="main.js"></script>
+<script src="viev.js" defer></script>
 </body>
 </html>

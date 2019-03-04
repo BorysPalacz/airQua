@@ -1,4 +1,3 @@
-
 const url1 = "https://api.openaq.org/v1/latest?location=Poznan-Dabrowskiego&parameter=pm25";
 fetch(url1)
     .then(resp => resp.json())
@@ -27,16 +26,16 @@ fetch(url1)
             document.body.style.backgroundColor = "#e07d7d";
             document.getElementById("myImg").src = "good.png"
         }
-        function myFunction() {
-            let x = document.getElementsByClassName("is-size-5");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          } 
-        
     })
     .catch(error => {
         console.warn('ups...', error);
     })
+
+    function toogle(id) {
+      let x = document.getElementById ("id");
+      if (x.style.display == "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    } 

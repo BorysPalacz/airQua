@@ -25,3 +25,14 @@ p {
     margin: 0 50px;
     height: 100vh;
 }
+#hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 99;
+
+ }
