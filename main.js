@@ -1,3 +1,18 @@
+function loading(respJson) {
+    setTimeout(function(){
+        document.getElementById("hideAll").style.display = "none";
+         }, 100);
+}
+
+function toogle(id) {
+  let x = document.getElementById ("id");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+
 const url1 = "https://api.openaq.org/v1/latest?location=Poznan-Dabrowskiego&parameter=pm25";
 fetch(url1)
     .then(resp => resp.json())
@@ -24,18 +39,12 @@ fetch(url1)
         } else{
             decision.innerHTML = "Zostań w domu i nie otwieraj okien!";
             document.body.style.backgroundColor = "#e07d7d";
-            document.getElementById("myImg").src = "good.png"
+            document.getElementById("myImg").src = "bad.png"
         }
     })
+      .then(respJson => {
+        this.loading(respJson);
+      })
     .catch(error => {
         console.warn('ups...', error);
     })
-
-    function toogle(id) {
-      let x = document.getElementById ("id");
-      if (x.style.display == "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    } 
